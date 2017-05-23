@@ -30,7 +30,7 @@ class nsga2:
         """SWATtxtinout folder should have 'nsga.in' subfolder with nsga2 input files"""
         libpath = os.path.dirname(nsga2utilities.__file__)
         #Copy necessary files to SWAT directory (Operating Platform Specific)
-        shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","Extract_rch.py"), SWATtxtinoutFolderDirectory)
+        #shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","Extract_rch.py"), SWATtxtinoutFolderDirectory)
         shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","SWAT_ParameterEdit.py"), SWATtxtinoutFolderDirectory)
         if "linux" in sys.platform.lower() or "darwin" in sys.platform.lower():
             print ("Operating System is {0}".format(sys.platform))
