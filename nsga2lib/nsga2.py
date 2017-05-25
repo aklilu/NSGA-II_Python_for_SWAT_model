@@ -34,15 +34,15 @@ class nsga2:
         shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","SWAT_ParameterEdit.py"), SWATtxtinoutFolderDirectory)
         if "linux" in sys.platform.lower() or "darwin" in sys.platform.lower():
             print ("Operating System is {0}".format(sys.platform))
-            shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","nsga2_mid.sh"), SWATtxtinoutFolderDirectory)
+            #shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","nsga2_mid.sh"), SWATtxtinoutFolderDirectory)
             shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","swat2012_627"), SWATtxtinoutFolderDirectory)
             shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","Makefile"), SWATtxtinoutFolderDirectory)
         elif "win" in sys.platform.lower():
             print ("Operating System is {0}".format(sys.platform))
-            shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","nsga2_mid.cmd"), SWATtxtinoutFolderDirectory)
+            #shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","nsga2_mid.cmd"), SWATtxtinoutFolderDirectory)
             shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","swat.exe"), SWATtxtinoutFolderDirectory)
         else: #goes with windows for now
-            shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","nsga2_mid.cmd"), SWATtxtinoutFolderDirectory)
+            #shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","nsga2_mid.cmd"), SWATtxtinoutFolderDirectory)
             shutil.copy2(os.path.join(libpath,"ScriptsForSWATtxt","swat.exe"), SWATtxtinoutFolderDirectory)
             
             
